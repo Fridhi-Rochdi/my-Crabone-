@@ -1,0 +1,90 @@
+/* Global Styles */
+
+/* Header */
+.dashboard-page {
+  margin-top: /* Calculate header height dynamically or set a fixed value */
+  calc(
+      9rem + /* Top padding */
+      1rem + /* Bottom padding */
+      1px /* Border if any */
+  );
+  /* OR a fixed value if you know the header height: */
+  /* margin-top: 60px; */ /* Example: if your header is 60px tall */
+  padding: 20px; /* Add some padding around the content*/
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+/* Dashboard Title */
+.dashboard-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Table Container */
+.table-container {
+  margin: 20px auto; /* Center the table on the page */
+  max-width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  top:100px;
+
+}
+
+/* KPI Table */
+.kpi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.kpi-table th {
+  background-color: #0044cc; /* Blue header for table */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.kpi-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.kpi-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Subtle row striping */
+}
+
+.kpi-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* KPI Value Styling */
+.kpi-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.kpi-value.positive {
+  color: green; /* Indicate positive values */
+}
+
+.kpi-value.negative {
+  color: red; /* Indicate negative values */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    font-size: 1.2rem;
+  }
+
+  .kpi-table th,
+  .kpi-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

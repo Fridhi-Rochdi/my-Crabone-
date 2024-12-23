@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Lobster&family=Roboto&display=swap');
+
+html {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:hsl(0, 5%, 84%);
+  position: relative;
+}
+.flex{
+  display:  flex;
+  align-items: center;
+
+}
+.border{
+  border:2px solid red;
+}
+li{
+  list-style: none;
+}
+button{
+all: unset;
+}
+.container{
+  background-color:#E3E2E4;
+}
